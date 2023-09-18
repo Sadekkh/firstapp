@@ -83,7 +83,7 @@
                                             <div class="product">
                                                 <a href="{{ route('addproductcart', $p->id) }}">
                                                     <div class="product-img">
-                                                        <img src="{{ Vite::asset('public/storage/products/' . $p->image[0]->name) }}"
+                                                        <img src="{{ asset('storage/products/' . $p->image[0]->name) }}"
                                                             alt="">
                                                         <div class="product-label">
                                                             @if ($p->discount != 0)
