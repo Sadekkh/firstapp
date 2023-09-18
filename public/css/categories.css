@@ -1,0 +1,36 @@
+/* resources/css/categories.css */
+
+.category-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.category-item {
+    margin-bottom: 10px;
+}
+
+.category-name {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subcategory-list {
+    display: none;
+    margin-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.subcategory-item {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #777;
+}
+.dropdown-menu {
+    display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
