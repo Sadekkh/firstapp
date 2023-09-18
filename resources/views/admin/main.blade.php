@@ -89,9 +89,25 @@
                             </ul>
                         </div>
 
-
                     </div>
+                    <!-- /sidebar menu -->
 
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <!-- /menu footer buttons -->
                 </div>
             </div>
 
@@ -116,8 +132,8 @@
                                         <span>Settings</span>
                                     </a>
                                     <a class="dropdown-item" href="javascript:;">Help</a>
-                                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>
-                                        Log Out</a>
+                                    <a class="dropdown-item" href="login.html"><i
+                                            class="fa fa-sign-out pull-right"></i> Log Out</a>
                                 </div>
                             </li>
 
@@ -243,6 +259,7 @@
     <script src="{{ asset('vendors/DateJS/build/date.js') }}"></script>
     <script src="{{ asset('vendors/moment/min/moment.min.js') }}"></script>
     <script src="{{ asset('vendors/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('build2/js/custom.js') }}"></script>
 
 
     @yield('script')
