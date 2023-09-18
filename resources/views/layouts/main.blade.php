@@ -9,13 +9,13 @@
 
     <title>YFB Store</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('view/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('view/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('view/css/slick-theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('view/css/nouislider.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('view/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('view/css/style.css') }}">
 
-    @vite(['resources/css/bootstrap.min.css'])
-    @vite(['resources/css/slick.css'])
-    @vite(['resources/css/slick-theme.css'])
-    @vite(['resources/css/nouislider.min.css'])
-    @vite(['resources/css/font-awesome.min.css'])
-    @vite(['resources/css/style.css'])
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet" />
     @yield('styles')
     <style>
@@ -145,7 +145,8 @@
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
                                 @foreach ($categories as $category)
-                                    <li class="nav-item"><a class="nav-link" href="">{{ $category->name_en }}</a>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="">{{ $category->name_en }}</a>
                                     </li>
                                 @endforeach
 
@@ -289,13 +290,15 @@
 
     <!-- jQuery Plugins -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script> @vite(['resources/js/slick.min.js'])
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js">
+        < script src = "{{ asset('view/js/slick.min.js') }}" >
+    </script>
+    <script src="{{ asset('view/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('view/js/slick.min.js') }}"></script>
+    <script src="{{ asset('view/js/nouislider.min.js') }}"></script>
+    <script src="{{ asset('view/js/jquery.zoom.min.js') }}"></script>
+    <script src="{{ asset('view/js/main.js') }}"></script>
 
-    @vite(['resources/js/bootstrap.min.js'])
-    @vite(['resources/js/slick.min.js'])
-    @vite(['resources/js/nouislider.min.js'])
-    @vite(['resources/js/jquery.zoom.min.js'])
-    @vite(['resources/js/main.js'])
 
     <script type="text/javascript">
         $.ajaxSetup({
